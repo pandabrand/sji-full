@@ -1,0 +1,28 @@
+.small-legal {
+  font-size: .75em;
+  padding-left: 10px;
+  padding-top: 20px;
+}
+
+article {
+  padding-left: 20px;
+}
+
+.bkgr-img {
+  position:relative;
+  background: url('../img/Ferguson-Campus-Vigil-faded.jpg')no-repeat center center fixed;
+  background-size: cover;
+}
+
+.entry-title {
+  color: $dark-blue;
+}
+
+.page-header {
+  margin: 0 0 0 1.5em;
+}
+
+.entry-footer {
+  background: $dark-blue;
+  float: left;
+}

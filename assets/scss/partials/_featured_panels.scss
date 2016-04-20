@@ -1,0 +1,79 @@
+@include susy-breakpoint(20em, 6) {
+  .entry-footer {
+    @include full;
+	.featured-panel {
+	  @include span(6);
+	  margin-top: 1em;
+	  margin-bottom: 1.5em;
+	  .featured-title {
+		width: 100%;    
+		display: table;
+		.title-wrapper {
+		  display: table-cell;
+		  background-color: $dark-blue;
+		  font-family: 'Raleway';
+		  font-weight: 700;
+		  color: $white;
+		  font-size: 1.25em;
+		  padding: 10px;
+		  height: 80px;
+		  vertical-align: middle;
+		  text-align: center;
+		}
+	  }
+	  .featured-image {
+		width: 100%;
+		img {
+		  display: block;
+		  width: inherit;
+		}
+	  }
+	  .featured-description {
+		display: table;
+		width: 100%;
+		.description-text {
+		  display: table-cell;
+		  background-color: $dark-blue;
+		  color: $white;
+		  height: 100px;
+		  padding: 10px;
+		  vertical-align: middle;
+		  text-align: center;
+		}
+	  }
+	}
+  }
+}
+
+@include susy-breakpoint(48em, 9) {
+  .entry-footer {
+	.featured-panel {
+	  @include span(3);
+	  margin-top: 0;
+	  margin-bottom: 0;
+	  .featured-title {
+		.title-wrapper {
+		  font-size: 1em;
+		}
+	  }
+	  .featured-image {
+	  }
+	  &:last-child {
+		@include last;
+	  }
+	}
+  }
+}
+
+@include susy-breakpoint(64em, 12) {
+  .entry-footer {
+	.featured-panel {
+	  @include span(4);
+	  .featured-image {
+	  }
+	  &:last-child {
+		@include last;
+	  }
+	}
+  }
+}
